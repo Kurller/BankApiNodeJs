@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const { MONGO_URI } = process.env;
-
+mongoose.set('strictQuery', true);
 exports.connect = () => {
     // Connecting to the database
     mongoose

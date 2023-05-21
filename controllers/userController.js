@@ -78,7 +78,8 @@ exports.register_a_user = async function(req, res) {
         // return new user
         res.status(201).json(user);
     } catch (err) {
-        return res.json({ message: err });
+       // return res.json({ message: err });
+       console.log(err)
     }
 }
 
@@ -105,11 +106,12 @@ exports.login_a_user = async function(req, res) {
             );
 
             user.token = token;
-            res.status(200).json(user);
+            res.status(201).json(user);
         }
 
     } catch (err) {
-        return res.json({ message: err });
+       // return res.json({ message: err });
+       console.log(err)
     }
 }
 
