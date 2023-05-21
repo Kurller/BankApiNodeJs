@@ -8,7 +8,7 @@
         "dev": "nodemon index.js"
     },
     "keywords": [],
-    "author": "Shola Nejo",
+    "author": "Kolawole Oladejo",
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^5.0.1",
